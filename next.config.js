@@ -1,6 +1,13 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
+  sentry: {
+    hideSourceMaps: true, // Prevents source maps from being exposed in production
+  },
+  output: 'export',
+  images: {
+    unoptimized: true,
+  },
 };
 
 module.exports = nextConfig;

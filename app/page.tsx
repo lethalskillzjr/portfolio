@@ -1,9 +1,12 @@
+import Approach from "@/components/Approach";
+import Client from "@/components/Client";
+import Experience from "@/components/Experience";
 import Grid from "@/components/Grid";
 import Hero from "@/components/Hero";
 import RecentProjects from "@/components/RecentProjects";
 import { FloatingNav } from "@/components/ui/FloatingNav";
 import { navItems } from "@/data";
-import { link } from "fs";
+// import { link } from "fs";
 import Image from "next/image";
 import { FaHome } from "react-icons/fa";
 
@@ -15,6 +18,9 @@ export default function Home() {
         <Hero />
         <Grid />
         <RecentProjects />
+        <Client />
+        <Experience />
+        {/* <Approach /> */}
       </div>
     </main>
       );
